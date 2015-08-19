@@ -1,0 +1,221 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,700);
+.landing-top-bg {
+  background-size: cover;
+  background-color: #0da3dc;
+  min-height: 250px;
+  margin: -10px;
+  height: 100%; }
+  .landing-top-bg h1 {
+    display: inline-block;
+    position: relative;
+    font-size: 500%;
+    float: right;
+    color: white;
+    margin-right: 175px;
+    margin-top: 140px;
+    margin-left: 15px;
+    font-style: italic; }
+
+#landing-logo {
+  height: auto;
+  width: auto;
+  max-height: 100px;
+  border-radius: 50%;
+  border-collapse: #58bee8;
+  float: right;
+  margin: 5px;
+  position: relative;
+  display: inline-block;
+  margin-top: 120px;
+  margin-right: 75px; }
+
+.landing-main {
+  display: block; }
+
+.landing-phones {
+  display: inline;
+  overflow: visible;
+  float: left; }
+
+#landing-ios {
+  height: auto;
+  width: auto;
+  max-height: 600px;
+  margin-top: -155px;
+  margin-left: 200px;
+  border-radius: 45px;
+  box-shadow: 0px 30px 40px -25px black;
+  margin-right: 100px; }
+
+.landing-content {
+  display: inline;
+  margin-left: 150px;
+  padding-right: 25px; }
+
+#landing-footer {
+  position: fixed; }
+
+#login-label {
+  color: #0DA3DC;
+  font-style: italic;
+  font-size: 150%;
+  font-weight: 400; }
+
+#login-welcome {
+  color: #0DA3DC;
+  font-size: 200%;
+  font-weight: 400; }
+
+#login-text {
+  font-weight: 300;
+  padding-right: 75px; }
+
+#login-links {
+  font-weight: 200;
+  color: #0DA3DC; }
+  #login-links a {
+    color: #58BEE8; }
+  #login-links a:hover {
+    color: #0DA3DC; }
+
+#login-btn {
+  color: white;
+  background-color: #0DA3DC;
+  border: none;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer; }
+
+.page-footer {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 80%;
+  font-weight: bold; }
+
+.page-footer li {
+  display: inline;
+  margin-left: 15px;
+  color: dimgray; }
+
+.page-footer li a {
+  text-decoration: none;
+  color: #0DA3DC; }
+
+.page-footer li a:visited {
+  color: #0DA3DC; }
+
+.page-footer li a:hover {
+  color: #58BEE8; }
+
+.u-header {
+  position: fixed;
+  display: block;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  background-color: #0DA1DB;
+  min-height: 70px; }
+  .u-header nav {
+    vertical-align: middle; }
+  .u-header li {
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    vertical-align: middle; }
+  .u-header a {
+    color: white;
+    text-decoration: none; }
+  .u-header a:hover {
+    color: azure; }
+
+#username {
+  float: right;
+  margin-right: 15px; }
+
+#u-overview {
+  margin-top: 70px;
+  padding: 15px;
+  border-color: white;
+  border-width: 25px; }
+
+.manager-table {
+  padding-top: 25px; }
+
+.pledge-table {
+  padding-top: 25px; }
+
+#u-respond {
+  margin-bottom: 25px; }
+
+* {
+  font-family: "Source Sans Pro", "proxima-nova", "Helvetica Neue", sans-serif; }
+
+html {
+  background-color: #FBFBFA; }
+  html body {
+    margin: 0;
+    width: 100%; }
+
+hr {
+  width: 100%; }
+
+#root {
+  width: 65%;
+  margin: 0 auto;
+  display: block;
+  overflow: scroll; }
+
+.section-title {
+  display: inline;
+  color: #58BEE8;
+  font-weight: 100; }
+
+.section-btns {
+  float: right;
+  font-weight: 100;
+  margin-left: 15px; }
+  .section-btns a {
+    color: #58BEE8;
+    text-decoration: none; }
+  .section-btns a:hover {
+    color: #0DA3DC; }
+
+.section-subhead {
+  color: #0DA3DC;
+  font-weight: 300; }
+
+.subhead-desc {
+  color: #58BEE8;
+  font-weight: 400;
+  margin-bottom: 5px; }
+
+.entity-container {
+  display: inline-block;
+  margin: 25px;
+  padding: 25px;
+  padding-top: 0px;
+  background-color: white;
+  vertical-align: top;
+  min-width: 200px;
+  border-radius: 5px; }
+  .entity-container input, .entity-container select {
+    width: 100%; }
+
+.section-btn {
+  display: block;
+  border-radius: 15px;
+  box-shadow: none;
+  margin: 20px 0px 0px -5px;
+  padding: 10px;
+  width: 100%;
+  min-height: 25px;
+  color: white;
+  background-color: #0DA3DC;
+  border: none;
+  font-size: 90%;
+  letter-spacing: 2px;
+  cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */

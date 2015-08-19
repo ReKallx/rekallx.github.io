@@ -1,64 +1,49 @@
----
----
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ site.title }}</title>
-	<meta name="keywords" content="{{ site.keywords }}">
-	<meta name="description" content="{{ site.description }}">
-  <link rel="stylesheet" href="combo.css">
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-  {% if site.favicon %}<link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon">{% endif %}
-	{% if site.touch_icon %}<link rel="apple-touch-icon" href="{{ site.touch_icon }}">{% endif %}
-</head>
-<body>
-  <div id="main">
+<html lang="en">
+  <head>
+    <title>ReKall</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/app.js" type="text/javascript"></script>
+  </head>
 
-    <nav><ul>
-      {% for node in site.posts reversed %}
-        {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
-        <li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>
-      {% endfor %}
-    </ul></nav>
-
-
-    {% for page in site.posts reversed %}
-      {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
-      <div id="{{id}}" class="section p-{{id}}">
-        {% if page.icon %}
-        <div class="subtlecircle sectiondivider imaged">
-          <img src="{{page.icon}}" alt="section icon" />
-          <h5 class="icon-title">{{ page.title }}</h5>
+  <body>
+<!--    <div class="root">-->
+      <div class="landing-top-bg">
+        <img id="landing-logo" src="img/logo-no-text.png" />
+        <h1>ReKall</h1>
+      </div>
+      
+      <div class="landing-main">
+        <div class="landing-phones">
+          <img id="landing-ios" src="img/landing-page-ios-mockup.png" />
         </div>
-        {% elsif page.fa-icon %}
-        <div class="subtlecircle sectiondivider faicon">
-          <span class="fa-stack">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-{{ page.fa-icon }} fa-stack-1x"></i>
-          </span>
-          <h5 class="icon-title">{{ page.title }}</h5>
-        </div>
-        {% endif %}
-        <div class="container {{ page.style }}">
-          {{ page.content }}
+        
+        <div class="landing-content">
+<!--          <h2 id="login-label">Login to ReKall</h2>-->
+<!--          <input id="login-btn" type="button" onclick="loginPressed()" value="Log in as John Snow" />-->
+          <h2 id="login-welcome">Welcome to ReKall</h2>
+          <p id="login-text">ReKall provides a safe place to store your life's puzzle pieces and gives access to the people that you trust the most.
+          <br>ReKall provides a secure platform for a person to store their critial Life Information that can then be accessed by their Life Managers in the event of a sudden emergency, even if the ReKall user is deemed incapacitated. Rather than leaving your loved ones and co-workers scrambling in your absense, ReKall allows you to confidently address your immediate needs and private wishes in a quick, safe, and secure manner. Your life matters, and the security of your Life's Information is our upmost priority.
+          <br><br>Life is full of uncertainty. Make sure that yours is secure when you need it most.</p>
+          <p id="login-links"><br><br>Download App on the iOS Store: <a href="http://apple.co/1GWPsXs">[click here]</a>
+          <br>Full Website coming soon!</p>
         </div>
       </div>
-    {% endfor %}
-
-
-    <div id="footer" class="section text-white">
-      <div class="container">
-        {% capture foottext %} {% include footer.md %} {% endcapture %}
-        {{ foottext | markdownify }}
-      </div>
-    </div>
-  </div>
-
-{% include analytics.html %}
-</body>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="site.js"></script>
+<!--    </div>-->
+          
+    <footer class="page-footer" id="landing-footer">
+      <!--div class="footer-wrapper"-->
+      <nav>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Security</a></li>
+          <li>&copy; 2015 ReKall</li>
+        </ul>
+      </nav>
+      <!--/div-->
+    </footer>
+  </body>
 </html>
